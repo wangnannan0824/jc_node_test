@@ -1,0 +1,14 @@
+/* Write your styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.boxlogin{
+    position: fixed;width: 100%;height: 100%;background-color: rgba(0, 0, 0, 0.5);
+    top: 0;left: 0;z-index: 99;
+}
+.boxinner{width: 600px;background-color: #fff;border-radius: 10px;
+box-sizing: border-box;padding: 20px;position: absolute;top: 50%;left: 50%;
+transform: translate(-50%,-50%)}
+form.denglu,form.zhuce,.boxlogin,.boxinner{display: none;}

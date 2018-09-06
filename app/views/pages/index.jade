@@ -1,0 +1,12 @@
+extends ../layout
+block content
+    .cards.cards-borderless
+        each item in movies
+            .col-sm-4
+                a.card(href='/movie/#{item.id}')
+                    img(src='#{item.poster}')
+                    .card-heading
+                        strong #{item.title}
+                    .card-content.text-muted #{item.shortit}
+                    .card-actions
+                        button.btn.btn-danger(type='button') 播放
